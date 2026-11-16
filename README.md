@@ -1,5 +1,11 @@
 # MarketPilot AI — AI-Powered E-Commerce Multi-Agent Automation Platform
 
+[![CI Pipeline](https://github.com/sudipto-swe/marketpilot-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/sudipto-swe/marketpilot-ai/actions/workflows/ci.yml)
+[![Deploy to GitHub Pages](https://github.com/sudipto-swe/marketpilot-ai/actions/workflows/deploy.yml/badge.svg)](https://github.com/sudipto-swe/marketpilot-ai/actions/workflows/deploy.yml)
+
+> 🌐 **Live 24/7 Production Deployment**: **[https://sudipto-swe.github.io/marketpilot-ai/](https://sudipto-swe.github.io/marketpilot-ai/)**  
+> 📦 **GitHub Repository**: **[https://github.com/sudipto-swe/marketpilot-ai](https://github.com/sudipto-swe/marketpilot-ai)**
+
 MarketPilot AI is a production-grade, local-first multi-agent e-commerce automation platform. It coordinates five specialized AI agents to automate customer feedback synthesis, competitor price tracking, SEO content generation, marketing campaign drafting, and human-in-the-loop executive business approvals.
 
 ---
