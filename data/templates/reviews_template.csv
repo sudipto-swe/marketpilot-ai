@@ -1,0 +1,6 @@
+review_id,product_sku,rating,review_text,review_date,source
+R001,HP001,2,"Battery life is disappointing and drains quickly",2026-10-20,demo
+R002,HP001,5,"Audio clarity and bass are phenomenal. Highly recommend!",2026-10-21,demo
+R003,HP001,1,"Battery died after three months. Very frustrating.",2026-10-22,demo
+R004,SPK002,5,"Took it to the lake and survived water splashes. Loud volume!",2026-10-23,demo
+R005,WCH003,4,"Solid battery life and sleep tracking accuracy.",2026-10-24,demo

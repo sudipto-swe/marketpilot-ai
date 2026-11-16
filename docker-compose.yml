@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: marketpilot_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - PROJECT_NAME=MarketPilot AI
+      - DATABASE_URL=sqlite:///./marketpilot.db
+      - LLM_PROVIDER=mock
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+      - OLLAMA_MODEL=llama3:8b
+    volumes:
+      - ./backend/marketpilot.db:/app/marketpilot.db
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: marketpilot_frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+    restart: unless-stopped

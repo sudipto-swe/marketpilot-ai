@@ -1,0 +1,4 @@
+sku,name,category,description,price,currency,brand,attributes
+HP001,Wireless Headphones,Electronics,High-fidelity wireless studio headphones,59.99,USD,ExampleBrand,"{""battery_hours"": 30}"
+SPK002,Portable Bluetooth Speaker,Electronics,Waterproof rugged outdoor speaker,39.99,USD,ExampleBrand,"{""waterproof"": ""IPX7"", ""battery_hours"": 16}"
+WCH003,Fitness Smartwatch,Wearables,Continuous heart-rate tracking smartwatch,79.99,USD,ExampleBrand,"{""battery_days"": 7}"
