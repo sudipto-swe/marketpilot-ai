@@ -1,0 +1,28 @@
+services:
+  # Backend FastAPI Web Service
+  - type: web
+    name: marketpilot-backend
+    runtime: python
+    buildCommand: "pip install --upgrade pip && pip install -r backend/requirements.txt email-validator && PYTHONPATH=backend python backend/scripts/seed_demo_data.py"
+    startCommand: "cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PROJECT_NAME
+        value: "MarketPilot AI"
+      - key: VERSION
+        value: "1.0.0"
+      - key: LLM_PROVIDER
+        value: "mock"
+      - key: DATABASE_URL
+        value: "sqlite:///./marketpilot.db"
+      - key: SECRET_KEY
+        generateValue: true
+
+  # Frontend Static Site
+  - type: static
+    name: marketpilot-frontend
+    buildCommand: "cd frontend && npm install && npm run build"
+    staticPublishPath: "frontend/dist"
+    routes:
+      - type: rewrite
+        source: "/*"
+        destination: "/index.html"
